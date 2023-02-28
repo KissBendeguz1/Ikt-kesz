@@ -1,0 +1,260 @@
+body {
+    background-color: #404040;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0,24,255);
+    background: linear-gradient(144deg, rgba(0,24,255,1) 0%, rgba(134,0,255,1) 66%);
+    border-radius: 10px;
+  }
+
+.navigation-bar {
+    
+    background: rgb(134,0,255);
+    background: linear-gradient(144deg, rgba(134,0,255,1) 3%, rgba(0,24,255,1) 67%, rgba(134,0,255,1) 93%);
+    position: fixed;
+    top: 0px;
+    width: clamp(300px, 110%, 8000px);
+    height: 40px;
+    margin-left: -10px;
+    display: flex;
+    z-index: 10;
+}
+
+.logonavbaron {
+    position: absolute;
+}
+
+.navigation-button {
+    background-color: transparent;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid white;
+    color: white;
+    width: clamp(30px, 100%, 400px);
+    height: 30px;
+    display: flex;
+    margin-top: 4px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 5px;
+
+    
+}
+
+.navigation-button:hover {
+  background-color: white;
+  color: black;
+  border: black4px solid;
+  
+}
+
+.navbuttonposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+    margin-left: 20px;
+
+}
+.navbarlogo {
+    height: 40px;
+    float: right;
+    position: absolute;
+    display: flex;
+
+}
+.navbarkep1 {
+ display: flex;
+ float: right;
+ 
+}
+@media (max-width: 100px) {
+.row, .navigation-bar, .navigation-button, .tartalom {   
+    flex-direction: column;
+
+  }
+}
+
+  .tartalom {
+    display: flex;
+  }
+
+
+
+ .cimek1 {
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+    margin: auto;
+    
+ }
+
+ .cimpozicio {
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  top: 70px;
+  position: relative;
+  }
+
+  .figyelmezteto {
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    top: 70px; 
+    color: red;
+    border: 4px solid red;
+    width: 500px;
+    text-align: center;
+    border-radius: 30px;
+  
+  }
+  
+
+.topcuccos {
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.responsive {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.tablapozition {
+  width: 700px;
+  overflow-x: scroll;
+}
+
+
+
+
+
+.toptabla {
+  width: 400px;
+  overflow-x: scroll;
+}
+
+.tablakepek {
+  width: 400px;
+}
+
+.top5 {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  top: 100px;
+  min-width: 400px;
+}
+
+.felfele {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  bottom: 30px;
+  border-radius: 25px 25px 25px 25px;
+  border: 5px solid white;
+  background-image: url(./kepk/arrov_up-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rolunkpoz {
+  position: relative;
+  top: 70px;
+  max-width: 600px;
+  min-width: fit-content;
+  border: 3px solid white;
+  color: white;
+  border-radius: 50px 50px 50px 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.cim2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.lablec {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  background: rgb(134,0,255);
+  background: linear-gradient(144deg, rgba(134,0,255,1) 3%, rgba(0,24,255,1) 67%, rgba(134,0,255,1) 93%);
+}
+
+.alatta {
+  position: relative;
+  top: 100px;
+  padding: 100px;
+}
+
+.kartyapoz {
+  display: grid;
+  width: fit-content;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(400px 1fp));
+}
+
+.jatek {
+  width: 400px;
+} 
+
+.jatekkep1 {
+  width: 300px;
+}
+
+.tartalom2 {
+  display: flex;
+  align-items: center;
+}
+
+
+.jatekkepe {
+  position: relative;
+  width: 50%;
+  display: flexbox;
+  align-content: center;
+  align-items: center;
+
+}
+
